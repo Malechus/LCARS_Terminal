@@ -1,0 +1,108 @@
+
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+
+  "defaultProfile": "{e2fcc209-df0b-42ee-8c9e-1387c67a551d}",
+  "launchMode": "maximizedFocus",
+
+  "copyOnSelect": false,
+
+  "copyFormatting": false,
+
+  "profiles": {
+    "defaults": {
+      "startOnUserLogin": true
+    },
+    "list": [
+      {
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "Windows PowerShell",
+        "commandline": "powershell.exe",
+        "hidden": false
+      },
+      {
+        "guid": "{e2fcc209-df0b-42ee-8c9e-1387c67a551d}",
+        "commandline": "powershell.exe",
+        "expirimental.retroTerminalEffect": true,
+        "hidden": false,
+        "colorScheme": "LCARS",
+        "fontFace": "Cascadia Mono",
+        "cursorShape": "vintage",
+        "fontSize": 10,
+        "name": "LCARS",
+        "useAcrylic": true,
+        "acrylicOpacity": 0.85,
+        "backgroundImage": "C:\\Local\\lcars2.jpg",
+        "backgroundImageOpacity": 0.75,
+        "backgroundImageStretchMode": "fill",
+        "padding": "225, 310, 25, 25"
+      },
+      {
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "name": "Command Prompt",
+        "commandline": "cmd.exe",
+        "hidden": false
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      }
+    ]
+  },
+
+  "schemes": [
+    {
+      "name": "LCARS",
+      "black": "#0C0C0C",
+      "red": "#cb99cc",
+      "green": "#006699",
+      "yellow": "#ff9a66",
+      "blue": "#9999cb",
+      "purple": "#9a99ff",
+      "cyan": "#006699",
+      "white": "#fefefe",
+      "brightBlack": "#5c6370",
+      "brightRed": "#cb99cc",
+      "brightGreen": "#006699",
+      "brightYellow": "#fe9900",
+      "brightBlue": "#9999cb",
+      "brightPurple": "#9a99ff",
+      "brightCyan": "#000088",
+      "brightWhite": "#ffffff",
+      "background": "#0C0C0C",
+      "foreground": "#fe9900",
+      "cursorColor": "#fe9900"
+    }
+
+  ],
+
+  "actions": [
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
+    },
+
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    }
+  ]
+}
