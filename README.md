@@ -9,3 +9,4 @@ All in all, this should be a pretty simple process.
 
 Engage!
 
+![Screenshot of LCARS Theme](screenshot.png)
